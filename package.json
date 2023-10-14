@@ -1,0 +1,20 @@
+{
+  "name": "ddns",
+  "version": "1.0.0",
+  "description": "auto ddns",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/main.js",
+    "dev": "tsc src/main.ts --outDir build && node build/main.js",
+    "build": "tsc src/main.ts --outDir build"
+  },
+  "author": "xq",
+  "license": "ISC",
+  "dependencies": {
+    "@alicloud/alidns20150109": "^3.0.9",
+    "@alicloud/domain20180129": "^3.14.8",
+    "axios": "^1.5.1",
+    "typescript": "^5.2.2"
+  }
+}
